@@ -1,0 +1,10 @@
+#14.	Define a function that accepts a list and an element and returns the number of times that element occurs.
+def count_element(numbers, element):
+    count = 0
+    for n in numbers:
+        if n == element:
+            count += 1
+    return count
+numbers = list(map(int, input("Enter numbers: ").split()))
+element = int(input("Enter element: "))
+print("Occurrences =", count_element(numbers, element))
