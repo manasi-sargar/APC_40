@@ -1,0 +1,11 @@
+import pandas as pd
+df=pd.read_csv("employees.csv")
+print("CSE employees:")
+print(df[df["Department"]=="CSE"])
+print("Average salary:",df["Salary"].mean())
+print("Highest salary:",df["Salary"].max())
+print("Lowest salary:",df["Salary"].min())
+print("Salary greater than 50000:")
+print(df[df["Salary"]>50000])
+print("Department-wise average salary:")
+print(df.groupby("Department")["Salary"].mean())
