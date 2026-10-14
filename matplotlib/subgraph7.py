@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+fig,ax=plt.subplots(2,2)
+ax[0,0].plot([1,2,3],[10,20,30])
+ax[0,0].set_title("Line Graph")
+ax[0,1].bar(["A","B","C"],[10,20,30])
+ax[0,1].set_title("Bar Graph")
+ax[1,0].scatter([1,2,3],[30,20,10])
+ax[1,0].set_title("Scatter Graph")
+ax[1,1].plot([1,2,3],[3,6,9])
+ax[1,1].set_title("Another Line")
+plt.tight_layout()
+plt.show()

@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+plt.subplot(1,3,1)
+plt.plot([1,2,3],[10,20,30])
+plt.title("Line")
+plt.subplot(1,3,2)
+plt.bar(["A","B","C"],[20,30,40])
+plt.title("Bar")
+plt.subplot(1,3,3)
+plt.scatter([1,2,3],[30,20,10])
+plt.title("Scatter")
+plt.tight_layout()
+plt.show()

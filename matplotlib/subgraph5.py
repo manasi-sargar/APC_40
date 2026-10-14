@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+plt.subplot(3,1,1)
+plt.plot([1,2,3],[10,20,30])
+plt.title("Graph 1")
+plt.subplot(3,1,2)
+plt.bar(["A","B","C"],[10,20,30])
+plt.title("Graph 2")
+plt.subplot(3,1,3)
+plt.scatter([1,2,3],[30,20,10])
+plt.title("Graph 3")
+plt.tight_layout()
+plt.show()
